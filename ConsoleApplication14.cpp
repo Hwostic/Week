@@ -63,12 +63,12 @@ public:
 
 
 
-ostream& operator<<(ostream& out, const Week arr) //передаем поток out, передаем точку
+ostream& operator<<(ostream& out,  Week arr) //передаем поток out, передаем точку
 { 
 
 	for (int i = 0; i < 7; i++)
 	{
-		out << arr[i];
+		out << arr[i] <<endl;
 	}
 	return out;
 }
@@ -85,6 +85,6 @@ int main()
 
 	week1[1] = "Это не понедельник";
 
-	cout << week1[2];
+	cout << week1;
 
 }
